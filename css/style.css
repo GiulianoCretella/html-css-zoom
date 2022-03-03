@@ -37,7 +37,7 @@ main{
 .tools span, .tools .fa-maximize{
     background-color: grey;
     padding: 3px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-right: 5px;
 }
 .user-container{
@@ -68,10 +68,71 @@ main{
 }
 /* nav-bar  */
 .nav-bar{
+   justify-content: space-between;
    position: fixed;
    left: 0;
    bottom: 0;
    width: 100vw;
    height: 70px;
    background-color: #222222;
+}
+.nav-bar .nav-left{
+    flex: 0 1 30%;
+    padding: 15px;
+    height: 100%;
+    color: white;
+}
+.nav-bar .nav-center{
+    flex: 0 1 40%;
+    padding: 15px;
+    height: 100%;
+    color: white;
+}
+.nav-bar .nav-center ul.flex-container, .nav-bar .nav-left ul.flex-container{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: center;
+    align-items: baseline;
+}
+.nav-bar .nav-left ul.flex-container{
+    justify-content: flex-start;
+}
+.nav-bar .nav-left ul.flex-container li{;
+    margin-right: 40px;
+    position:relative;
+}
+.nav-bar .nav-center ul.flex-container li{
+    position: relative;
+}
+.nav-bar .nav-center ul.flex-container .green{
+    color: #4BC802;
+}
+.nav-bar .nav-center ul.flex-container .fa-solid, .nav-bar .nav-left ul.flex-container .fa-solid{
+    font-size: 20px;
+}
+.nav-bar .nav-center ul.flex-container p,.nav-bar .nav-left ul.flex-container p{
+    font-size:12px;
+    margin-top: 2px;
+}
+.nav-bar ul.flex-container li .fa-solid:nth-of-type(2){
+    font-size: 12px;
+    position: absolute;
+    bottom: 15px;
+    right: -20px;
+}
+.nav-right{
+    flex: 0 1 30%;
+    height: 100%;
+    color: white;
+    text-align: right;
+}
+.nav-right .end{
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 30%;
+    height: 100%;
+    color: red;
+    background-color: #4A4A4A;
 }
