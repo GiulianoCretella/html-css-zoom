@@ -4,13 +4,14 @@
    box-sizing: border-box;
 }
 .debug{
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
 }
 .flex-container{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: flex-start;
 }
 
 /* main  */
@@ -20,7 +21,20 @@ main{
     background-color: black;
     overflow-y: auto;
 }
-
+.user-container{
+    width: 90%;
+    margin: 40px auto;
+}
+.user-box-container{
+    gap: 5px;
+    justify-content: space-between;
+}
+.user-box{
+    flex:0 1 calc(20% - 5px);
+}
+.user-box img{
+    width: 100%;
+}
 /* nav-bar  */
 .nav-bar{
    position: fixed;
